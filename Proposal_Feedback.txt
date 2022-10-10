@@ -1,0 +1,31 @@
+CIS522 Project Proposal Feedback
+Pennkey: jasyan
+Pod: brute-force
+Assigned TA: HarshTotal points: 24 out of 28.
+Late days used for this assignment: 0
+Breakdown of points:
+Problem Statement:
+We will implement a Deep Q-learning control agent for a classical snake game with new mazes and obstacles. We will give the agent the location of the snake body, walls, and food, and the snake must navigate through the maze and get the food without crashing into walls or its own body.
+Grading Problem Statement:
+Comment 1: Problem to be solved is clearly described; Points: 5 out of 5
+Dataset:
+We will implement a Deep Q-learning control agent for a classical snake game with new mazes and obstacles. We will give the agent the location of the snake body, walls, and food, and the snake must navigate through the maze and get the food without crashing into walls or its own body.
+Grading Dataset:
+Comment 1: Reasonable amount of training data from a reasonable source available; Points: 5 out of 5
+Methods:
+Traditional q-learning scales poorly in relation to the size of the state space. We want to use DL to extract features from the current map state and use approximate q-learning to make the agent understand the situation and make the right decision.
+Grading Methods:
+Comment 1: Only somewhat describes data hypothesis and inductive biases; Points: 3 out of 5
+Comment 2: DL tools described only somewhat seem reasonable to solve previously described problem; Points: 3 out of 5
+Innovation:
+While the separate problems of the snake game and maze navigation have both been tackled with Deep RL, we think combining the two, turning the maze into a shifting maze composed of both static walls and the dynamic snake body will offer an interesting challenge for us to tackle. In addition, this incorporates new reset-free ideas to the traditional Q-learning by making the snake get food without any resets.
+Grading Innovation:
+Comment 1: Innovative character of the project is clear and is a sufficient step up from the material covered in the course; Points: 5 out of 5
+Social Impact (Extra Credit):
+Oftentimes in these navigation problems the agent is reset to the start of the maze and training is done again. However, in the real world, maze navigation is not reset free. For example take disaster recovery, and we need to search through the rubble for survivors. Once the agent has found someone, it is not teleported back to the surface and must search for the next survivor as soon as possible. One great part about this framework is that it encourages safety of the agent. Since the snake dies when it hits any walls, it makes it perfect in these dangerous situations. By incorporating the snake game framework with maze navigation, we take on additional challenges that draws Q-learning closer to real-world practical use.
+Grading Social Impact:
+Comment 1: Describes a potential social impact of the project; Points: 3 out of 3
+Feedback from TA:
+We advise you to schedule a meeting with your assigned TA, Harsh, to discuss the next steps of your projects.
+Best,
+CIS522 Staff
